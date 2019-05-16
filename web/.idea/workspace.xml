@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d8d358b8-678f-4859-9dc3-80c1613de6a3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../predict/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/.idea/other.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/.idea/predict.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/NRLMF/E.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/NRLMF/GPCR.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/NRLMF/IC.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/NRLMF/NR.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/datasets/e_admat_dgc.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/datasets/e_simmat_dc1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/datasets/e_simmat_dc2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/datasets/e_simmat_dc3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/datasets/e_simmat_dc4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/datasets/e_simmat_dg1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/datasets/e_simmat_dg2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/datasets/e_simmat_dg3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/datasets/e_simmat_dg4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/datasets/gpcr_admat_dgc.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/datasets/gpcr_simmat_dc1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/datasets/gpcr_simmat_dc2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/datasets/gpcr_simmat_dc3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/datasets/gpcr_simmat_dc4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/datasets/gpcr_simmat_dg1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/datasets/gpcr_simmat_dg2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/datasets/gpcr_simmat_dg3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/datasets/gpcr_simmat_dg4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/datasets/ic_admat_dgc.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/datasets/ic_simmat_dc1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/datasets/ic_simmat_dc2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/datasets/ic_simmat_dc3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/datasets/ic_simmat_dc4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/datasets/ic_simmat_dg1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/datasets/ic_simmat_dg2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/datasets/ic_simmat_dg3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/datasets/ic_simmat_dg4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/datasets/nr_admat_dgc.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/datasets/nr_simmat_dc1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/datasets/nr_simmat_dc2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/datasets/nr_simmat_dc3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/datasets/nr_simmat_dc4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/datasets/nr_simmat_dg1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/datasets/nr_simmat_dg2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/datasets/nr_simmat_dg3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/datasets/nr_simmat_dg4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/netlaprls/cv_eval.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/netlaprls/functions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/netlaprls/netlaprls1_0rev.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/netlaprls/new_pairs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/netlaprls/predictmodel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/netlaprls/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/netlaprls/testnetlp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../predict/netlaprls/trainmodel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/web.iml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="82" column="31" lean-forward="true" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="28" lean-forward="true" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manage.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/wsgi.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/web/settings.py" />
+        <option value="$PROJECT_DIR$/web/__init__.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="611" />
+    <option name="y" value="175" />
+    <option name="width" value="1914" />
+    <option name="height" value="1186" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="web" type="Python.DjangoServer" factoryName="Django server">
+      <module name="web" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="web.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d8d358b8-678f-4859-9dc3-80c1613de6a3" name="Default Changelist" comment="" />
+      <created>1557995170598</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1557995170598</updated>
+      <workItem from="1557995175751" duration="799000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="799000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="611" y="175" width="1914" height="1186" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info active="true" anchor="bottom" id="Version Control" visible="true" weight="0.3299817" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3299817" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="SciView" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/web/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="82" column="31" lean-forward="true" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="28" lean-forward="true" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
