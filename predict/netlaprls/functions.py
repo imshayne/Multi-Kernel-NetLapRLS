@@ -28,7 +28,7 @@ def load_data_from_file(dataset, folder):
     drugMat = np.zeros((drug_num, drug_num), dtype=np.float64)
     targetMat = np.zeros((target_num, target_num), dtype=np.float64)
 
-    # 读取药物相似矩阵 包括4个核矩阵 并且分别乘以1/4 合并为新的药物相似矩阵
+    # 读取药物相似矩阵 包括4个核矩阵 并且分别乘以0.2 合并为新的药物相似矩阵 (剩下的0.2作为正则项)
     for indexD in xrange(1, 5, 1):
         with open(os.path.join(folder, dataset+"_simmat_dc%d.txt" % indexD), "r") as inf:
             inf.next()
@@ -88,9 +88,9 @@ def cross_validation(intMat, seeds, cv=1, num=10):
             # 找出对应intMat下标的值
             test_label = intMat[x, y]
             W = np.ones(intMat.shape)
-            # 将上述找出的下标所对应的值 置为0 W即作为训练矩阵
+            # 将上述找出的下标所对应的值 置为0 W即作为训练矩阵的标记矩阵
             W[x, y] = 0
-            # 将生成的训练矩阵 结合上述标记为0的下标 和 test_label(没置0前对应的值)
+            # 将生成的训练矩阵 结合上述标记为0的下标 和 test_label(没置为0前对应的值)
             cv_data[seed].append((W, test_data, test_label))
     return cv_data
 
@@ -98,16 +98,19 @@ def cross_validation(intMat, seeds, cv=1, num=10):
 # 训练模型
 def train(model, cv_data, intMat, drugMat, targetMat):
     aupr, auc = [], []
+    # cv_data.keys()返回 cross_validation()中 列表seeds
     for seed in cv_data.keys():
         for W, test_data, test_label in cv_data[seed]:
-            model.fix_model(W, intMat, drugMat, targetMat, seed)
-            aupr_val, auc_val = model.evaluation(test_data, test_label)
+            # 将10折测试集 分别进行模型评估
+            model.fix_model(W, intMat, drugMat, targetMat, seed)   # 得到 intMat-->Ytree 的 predictR矩阵
+            aupr_val, auc_val = model.evaluation(test_data, test_label)  #
             aupr.append(aupr_val)
             auc.append(auc_val)
     return np.array(aupr, dtype=np.float64), np.array(auc, dtype=np.float64)
 
 
-# 平均置信区间
+# aupr平均值 平均置信区间  TODO 置信区间 由样本统计量所构造的总体参数的估计区间
+# 样本量相同的情况下， 置信水平越高 置信区间越宽
 def mean_confidence_interval(data, confidence=0.95):
     import scipy as sp
     import scipy.stats

@@ -45,11 +45,13 @@ class TrainModel:
     def train_md(self):
         self.intMat, self.drugMat, self.targetMat = self.read_and_write_datasets()
         drug_names, target_names = self.read_and_write_dg_names()
+        # 使用默认参数fix
         model = NetLapRLS()
         # 交叉验证
         self.cv_data = cross_validation(self.intMat, self.seeds, self.cv)
         tic = time.clock()
         aupr_vec, auc_vec = train(model, self.cv_data, self.intMat, self.drugMat, self.targetMat)
+        # 通过aupr_vec 得出平均aupr 和
         aupr_avg, aupr_conf = mean_confidence_interval(aupr_vec)
         auc_avg, auc_conf = mean_confidence_interval(auc_vec)
         print "auc:%.6f, aupr: %.6f, auc_conf:%.6f, aupr_conf:%.6f, Time:%.6f \n" \
