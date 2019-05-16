@@ -57,7 +57,8 @@ def get_drugs_targets_names(dataset, folder):
 
 
 # cv的模式cv1 cv2 cv3
-def cross_validation(intMat, seeds, cv=0, num=10):
+# cv1 在intMat的基础上，
+def cross_validation(intMat, seeds, cv=1, num=10):
     cv_data = defaultdict(list)
     # print cv_data
     for seed in seeds:
@@ -66,21 +67,30 @@ def cross_validation(intMat, seeds, cv=0, num=10):
         if cv == 0:
             index = prng.permutation(num_drugs)
         if cv == 1:
+            # index 表示intMat中全体下标总数
+            # permutation test 置换检验
             index = prng.permutation(intMat.size)
         step = index.size/num
         for i in xrange(num):
             if i < num-1:
+                # 抽取step步长的下标
                 ii = index[i*step:(i+1)*step]
             else:
+                # i = 9
                 ii = index[i*step:]
             if cv == 0:
                 test_data = np.array([[k, j] for k in ii for j in xrange(num_targets)], dtype=np.int32)
             elif cv == 1:
+                #
                 test_data = np.array([[k/num_targets, k % num_targets] for k in ii], dtype=np.int32)
+            # 生成随机test_data对应intMat下的下标
             x, y = test_data[:, 0], test_data[:, 1]
+            # 找出对应intMat下标的值
             test_label = intMat[x, y]
             W = np.ones(intMat.shape)
+            # 将上述找出的下标所对应的值 置为0 W即作为训练矩阵
             W[x, y] = 0
+            # 将生成的训练矩阵 结合上述标记为0的下标 和 test_label(没置0前对应的值)
             cv_data[seed].append((W, test_data, test_label))
     return cv_data
 

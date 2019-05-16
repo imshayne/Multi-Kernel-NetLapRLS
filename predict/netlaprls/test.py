@@ -21,7 +21,7 @@ from cv_eval import netlaprls_cv_eval
 ############################################################################
 # 模型运行 未进行调参 默认值训练
 trainmodel = TrainModel(dataset='ic')
-trainmodel.train()
+trainmodel.train_md()
 
 # 调参 beta_t bata_d
 trainmodel.cv_eval()

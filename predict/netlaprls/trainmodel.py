@@ -42,7 +42,7 @@ class TrainModel:
             print '%s dt_name save done! \n' % self.dataset
         return drug_names, target_names
 
-    def train(self):
+    def train_md(self):
         self.intMat, self.drugMat, self.targetMat = self.read_and_write_datasets()
         drug_names, target_names = self.read_and_write_dg_names()
         model = NetLapRLS()

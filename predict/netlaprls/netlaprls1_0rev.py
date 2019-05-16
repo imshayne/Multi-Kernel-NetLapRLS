@@ -25,7 +25,6 @@ Default parameters in this implementation:
 
 
 class NetLapRLS:
-
     def __init__(self, gamma_d=10, gamma_t=10, beta_d=1e-5, beta_t=1e-5):
         self.gamma_d = float(gamma_d)
         self.gamma_t = float(gamma_t)
