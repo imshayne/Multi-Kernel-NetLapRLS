@@ -6,11 +6,12 @@ import numpy as np
 import os
 from collections import defaultdict
 
-
-
 '''
 此文件中为初始化操作数据集加载(load_data_from_file)、矩阵行列名称的读取(get_drugs_targets_names)
 '''
+
+BASE_DIR = os.path.abspath('..')
+BASE_DIR = os.path.join(BASE_DIR, 'output')
 
 
 def load_data_from_file(dataset, folder):
@@ -55,6 +56,7 @@ def get_drugs_targets_names(dataset, folder):
     return drugs, targets
 
 
+# cv的模式cv1 cv2 cv3
 def cross_validation(intMat, seeds, cv=0, num=10):
     cv_data = defaultdict(list)
     # print cv_data
@@ -95,15 +97,6 @@ def train(model, cv_data, intMat, drugMat, targetMat):
     return np.array(aupr, dtype=np.float64), np.array(auc, dtype=np.float64)
 
 
-def svd_init(M, num_factors):
-    from scipy.linalg import svd
-    U, s, V = svd(M, full_matrices=False)
-    ii = np.argsort(s)[::-1][:num_factors]
-    s1 = np.sqrt(np.diag(s[ii]))
-    U0, V0 = U[:, ii].dot(s1), s1.dot(V[ii, :])
-    return U0, V0.T
-
-
 # 平均置信区间
 def mean_confidence_interval(data, confidence=0.95):
     import scipy as sp
@@ -118,8 +111,31 @@ def mean_confidence_interval(data, confidence=0.95):
 
 
 def write_metric_vector_to_file(auc_vec, file_name):
-    np.savetxt(file_name, auc_vec, fmt='%.6f')
+    np.savetxt(file_name, auc_vec, fmt='%.8f')
+
+
+# 多变量写入文件
+def write_multi_para_to_file(file_name, *para):
+    file_name = os.path.join(BASE_DIR, file_name)
+    np.savez(file_name, para)
 
 
 def load_metric_vector(file_name):
     return np.loadtxt(file_name, dtype=np.float64)
+
+
+# 多变量文件读写
+def load_multi_para_to_file(file_name):
+    file_name = os.path.join(BASE_DIR, file_name)
+    return np.load(file_name)
+
+
+# 矩阵保存
+def save_dt_matrix_to_file(filename, matrix):
+    filename = os.path.join(BASE_DIR, filename)
+    np.savetxt(filename, matrix, delimiter=',', fmt='%.8f')
+
+
+def load_dt_matrix_to_file(filename):
+    filename = os.path.join(BASE_DIR, filename)
+    return np.loadtxt(filename, delimiter=',')

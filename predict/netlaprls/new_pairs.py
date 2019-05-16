@@ -140,7 +140,6 @@ def verify_drug_target_interactions(pairs, kegg, drugbank, chembl, matador, drug
 
 
 def novel_prediction_analysis(predict_pairs, output_file, database_folder, positions=[10, 30, 50, 100, 200, 500, 1000]):
-
     drugMap, targetMap = load_keggid_map(database_folder)
     kegg = load_drug_target_pairs(os.path.join(database_folder, "kegg.txt"))
     drugbank = load_drug_target_pairs(os.path.join(database_folder, "drugbank.txt"))
