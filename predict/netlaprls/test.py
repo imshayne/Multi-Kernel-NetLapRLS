@@ -3,7 +3,6 @@ __author__ = 'mcy'
 __date__ = '2019-04-29 10:29'
 
 from trainmodel import TrainModel
-from cv_eval import netlaprls_cv_eval
 
 ############################################################################
 # # defaultdict 实例

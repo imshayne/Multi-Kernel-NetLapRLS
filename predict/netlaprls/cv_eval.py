@@ -7,9 +7,10 @@ from functions import *
 from netlaprls1_0rev import NetLapRLS
 import pickle
 
-# TODO xyz  y-- 10-5 10-3 10
+# TODO xyz  y -- 10-5 10-3 10
 # TODO beta_d beta_t 生成矩阵 可视化图
-# TODO
+# TODO 平均的auc 和 aupr值
+# TODO 模型预测 将出现的作用对 标记
 
 
 def netlaprls_cv_eval(method, dataset, cv_data, X, D, T, cvs, para):

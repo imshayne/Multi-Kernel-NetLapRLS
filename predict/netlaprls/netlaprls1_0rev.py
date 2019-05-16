@@ -34,7 +34,6 @@ class NetLapRLS:
     def fix_model(self, W, intMat, drugMat, targetMat, seed=None):
         R = W*intMat
         m, n = R.shape
-        # print m,n
         # 修正similarity matrix --> symmetric matrix
         drugMat = (drugMat + drugMat.T)/2.
         targetMat = (targetMat + targetMat.T)/2.
@@ -47,18 +46,12 @@ class NetLapRLS:
         Wt = Wt-np.diag(np.diag(Wt))
         # D是一个wd的按照列相加 得到的为列表 长度为drug 开根号 的对角矩阵  D=Dd^(-1/2)
         ## Dd节点的度矩阵
-        # RuntimeWarning: divide by zero encountered in divide
         Wd_srow = np.sum(Wd, axis=1, dtype=np.float64)
-        # Wd_srow[np.where(Wd_srow == 0)] == 0.00001
         D = np.diag(1.0/np.sqrt(Wd_srow))
         Ld = np.eye(m) - np.dot(np.dot(D, Wd), D)  # Ld = Indxnd - DwdD
 
-        # 将 0 -> 0.00001
         Wt_srow = np.sum(Wt, axis=1, dtype=np.float64)
-        # Wt_srow[np.where(Wt_srow == 0)] = 0.00001
-
         # print np.where(Wt_srow == 0)  # 检查np.sum(Wt,axis=1))是否有0
-
         D = np.diag(1.0/np.sqrt(Wt_srow))
         Lt = np.eye(n) - np.dot(np.dot(D, Wt), D)
 
@@ -75,6 +68,7 @@ class NetLapRLS:
 
     def evaluation(self, test_data, test_label):
         scores = self.predictR[test_data[:, 0], test_data[:, 1]]
+        # test_label的值为原始intMat中对应下标的值 scores是将原始intMat中对应test_data的下标置为0后经过fix后 对应下标位置的得分
         prec, rec, thr = precision_recall_curve(test_label, scores)
         aupr_val = auc(rec, prec)
         fpr, tpr, thr = roc_curve(test_label, scores)
