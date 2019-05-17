@@ -21,12 +21,16 @@ drug_names, target_names = get_drugs_targets_names(dataset, os.path.join(data_di
 dataset = 'e'
 model = NetLapRLS()
 print "Dataset:" + dataset + "\n" + 'netlaprls'
-seed = [22, ]
+seeds = [22, ]
 
-model.fix_model(intMat, intMat, drugMat, targetMat, seed)
+model.fix_model(intMat, intMat, drugMat, targetMat, seeds)
+# 取出所有未标记的index
 x, y = np.where(intMat == 0)
+
+# zip(x, y) 未标记的index
 scores = model.predict_scores(zip(x, y), 5)
-# argsort函数 返回数组值从大到小的索引值
+# argsort函数 默认返回数索引值从小到大
+# ii 表示将预测到的scores列表 进行降序
 ii = np.argsort(scores)[::-1]
 # 预测返回的样本个数
 predict_num = None
@@ -37,10 +41,14 @@ print 'output_dir is ' + output_dir
 # 预测标靶对
 predict_pairs = [(drug_names[x[i]], target_names[y[i]], scores[i]) for i in ii[:predict_num]]
 new_dti_file = os.path.join(output_dir, "_".join(['netlaprls', dataset, "new_dti.txt"]))
-novel_prediction_analysis(predict_pairs, new_dti_file, os.path.join(data_dir, 'biodb'))
-
-
-class PredictModel:
-
-    pass
+# novel_prediction_analysis(predict_pairs, new_dti_file, os.path.join(data_dir, 'biodb'))
+# '''
+#     在现有的数据集中预测新的药物-标靶作用对
+# '''
+#
+#
+# class PredictModel:
+#
+#     pass
+#
 

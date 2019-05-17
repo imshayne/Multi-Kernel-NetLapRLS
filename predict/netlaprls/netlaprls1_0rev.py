@@ -7,7 +7,7 @@ netlaprls
 '''
 
 import numpy as np
-from sklearn.metrics import precision_recall_curve, roc_curve
+from sklearn.metrics import precision_recall_curve, roc_curve, accuracy_score, precision_score
 from sklearn.metrics import auc
 
 
@@ -74,6 +74,10 @@ class NetLapRLS:
         fpr, tpr, thr = roc_curve(test_label, scores)
         auc_val = auc(fpr, tpr)
         return aupr_val, auc_val
+
+    def accuracy_md(self, test_data, test_label):
+        scores = self.predictR[test_data[:, 0], test_data[:, 1]]
+        return accuracy_score(test_label, scores.round(), normalize=True)
 
     def __str__(self):
         return "Model: NetLapRLS, gamma_d:%s, gamma_t:%s, beta_d:%s, beta_t:%s" \
