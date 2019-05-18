@@ -57,14 +57,14 @@ def get_drugs_targets_names(dataset, folder):
 
 
 # cv的模式cv1 cv2 cv3
-# cv1 在intMat的基础上，
+# cv1 在intMat的基础上，seeds = [7771, 8367, 22, 1812, 4659]
 def cross_validation(intMat, seeds, cv=1, num=10):
     cv_data = defaultdict(list)
-    # print cv_data
+    # seeds 随机数种子
     for seed in seeds:
         num_drugs, num_targets = intMat.shape
         prng = np.random.RandomState(seed)
-        if cv == 0:
+        if cv == 0:  # cvs1 cvs2
             index = prng.permutation(num_drugs)
         if cv == 1:
             # index 表示intMat中全体下标总数
@@ -92,7 +92,7 @@ def cross_validation(intMat, seeds, cv=1, num=10):
             W[x, y] = 0
             # 将生成的训练矩阵 结合上述标记为0的下标 和 test_label(没置为0前对应的值)
             cv_data[seed].append((W, test_data, test_label))
-    return cv_data
+    return cv_data  # 每次内循环生成10个训练集
 
 
 # 训练模型
@@ -107,6 +107,18 @@ def train(model, cv_data, intMat, drugMat, targetMat):
             aupr.append(aupr_val)
             auc.append(auc_val)
     return np.array(aupr, dtype=np.float64), np.array(auc, dtype=np.float64)
+
+
+def train_accuracy(model, cv_data, intMat, drugMat, targetMat):
+    accs = []
+    # cv_data.keys()返回 cross_validation()中 列表seeds
+    for seed in cv_data.keys():
+        for W, test_data, test_label in cv_data[seed]:
+            # 将10折测试集 分别进行模型评估
+            model.fix_model(W, intMat, drugMat, targetMat, seed)  # 得到 intMat-->Ytree 的 predictR矩阵
+            acc = model.accuracy_md(test_data, test_label)  #
+            accs.append(acc)
+    return np.array(accs, dtype=np.float64)
 
 
 # aupr平均值 平均置信区间  TODO 置信区间 由样本统计量所构造的总体参数的估计区间
