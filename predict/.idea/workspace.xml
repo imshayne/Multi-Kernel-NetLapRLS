@@ -30,8 +30,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/netlaprls/netlaprls1_0rev.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state>
               <caret line="64" column="18" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
+=======
+<<<<<<< HEAD
+            <state relative-caret-position="223">
+              <caret line="75" column="32" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="32" />
+=======
+            <state relative-caret-position="314">
+              <caret line="64" column="18" lean-forward="true" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
+>>>>>>> aa610f27c7991a7c0e933ecc58cf11a3cc7119c7
+>>>>>>> 8df3f6b9e33ad1f84c59fd36a0d07d4a8453b29c
               <folding>
                 <element signature="e#90#108#0" expanded="true" />
               </folding>
@@ -54,11 +64,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/netlaprls/functions.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state>
               <caret line="65" column="42" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
+=======
+<<<<<<< HEAD
+            <state relative-caret-position="810">
+              <caret line="54" column="48" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
+=======
+            <state relative-caret-position="147">
+              <caret line="65" column="42" lean-forward="true" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
+>>>>>>> 8df3f6b9e33ad1f84c59fd36a0d07d4a8453b29c
               <folding>
                 <element signature="e#71#89#0" expanded="true" />
               </folding>
+>>>>>>> aa610f27c7991a7c0e933ecc58cf11a3cc7119c7
             </state>
           </provider>
         </entry>
@@ -66,8 +86,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/netlaprls/trainmodel.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state>
               <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
+=======
+<<<<<<< HEAD
+            <state relative-caret-position="510">
+              <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+=======
+            <state relative-caret-position="425">
+              <caret line="25" column="55" lean-forward="true" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
+>>>>>>> aa610f27c7991a7c0e933ecc58cf11a3cc7119c7
+>>>>>>> 8df3f6b9e33ad1f84c59fd36a0d07d4a8453b29c
             </state>
           </provider>
         </entry>
@@ -75,8 +105,18 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/netlaprls/predictmodel.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="234">
               <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+=======
+<<<<<<< HEAD
+            <state relative-caret-position="615">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
+=======
+            <state relative-caret-position="604">
+              <caret line="52" column="1" lean-forward="true" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+>>>>>>> aa610f27c7991a7c0e933ecc58cf11a3cc7119c7
+>>>>>>> 8df3f6b9e33ad1f84c59fd36a0d07d4a8453b29c
             </state>
           </provider>
         </entry>
@@ -84,8 +124,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/netlaprls/test.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state>
               <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+=======
+<<<<<<< HEAD
+            <state relative-caret-position="1545">
+              <caret line="105" column="45" selection-start-line="105" selection-start-column="45" selection-end-line="105" selection-end-column="45" />
+=======
+            <state relative-caret-position="216">
+              <caret line="30" column="20" lean-forward="true" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+>>>>>>> aa610f27c7991a7c0e933ecc58cf11a3cc7119c7
+>>>>>>> 8df3f6b9e33ad1f84c59fd36a0d07d4a8453b29c
               <folding>
                 <element signature="e#71#104#0" expanded="true" />
               </folding>
@@ -96,8 +146,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/.pyenv/versions/env-2.7.9/lib/python2.7/site-packages/matplotlib/figure.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state>
               <caret line="1952" column="42" selection-start-line="1952" selection-start-column="42" selection-end-line="1952" selection-end-column="42" />
+=======
+<<<<<<< HEAD
+            <state relative-caret-position="240">
+              <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+=======
+            <state relative-caret-position="-6">
+              <caret line="1952" column="42" lean-forward="true" selection-start-line="1952" selection-start-column="42" selection-end-line="1952" selection-end-column="42" />
+>>>>>>> aa610f27c7991a7c0e933ecc58cf11a3cc7119c7
+>>>>>>> 8df3f6b9e33ad1f84c59fd36a0d07d4a8453b29c
             </state>
           </provider>
         </entry>
@@ -138,11 +198,24 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="631" />
     <option name="y" value="317" />
+=======
+<<<<<<< HEAD
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="18" />
+    <option name="width" value="1366" />
+    <option name="height" value="768" />
+=======
+  <component name="ProjectFrameBounds">
+    <option name="x" value="588" />
+    <option name="y" value="70" />
+>>>>>>> 8df3f6b9e33ad1f84c59fd36a0d07d4a8453b29c
     <option name="width" value="1914" />
     <option name="height" value="1186" />
+>>>>>>> aa610f27c7991a7c0e933ecc58cf11a3cc7119c7
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -152,7 +225,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -179,6 +251,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -339,10 +412,20 @@
       <option name="presentableId" value="Default" />
       <updated>1557995313601</updated>
       <workItem from="1557995314777" duration="1521000" />
+<<<<<<< HEAD
+      <workItem from="1557998789962" duration="17078000" />
+      <workItem from="1558022995008" duration="4982000" />
+      <workItem from="1558148723952" duration="26000" />
+=======
       <workItem from="1557998789962" duration="17140000" />
       <workItem from="1558047908363" duration="234000" />
+<<<<<<< HEAD
       <workItem from="1558049638910" duration="17515000" />
       <workItem from="1558144256422" duration="601000" />
+=======
+      <workItem from="1558049638910" duration="17260000" />
+>>>>>>> aa610f27c7991a7c0e933ecc58cf11a3cc7119c7
+>>>>>>> 8df3f6b9e33ad1f84c59fd36a0d07d4a8453b29c
     </task>
     <task id="LOCAL-00001" summary="rev1.0&#10;1. 完成算法的编写&#10;2. 未优化">
       <created>1557996526705</created>
@@ -355,12 +438,26 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="37011000" />
+=======
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="23607000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1366" height="768" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15785499" />
+=======
+    <option name="totallyTimeSpent" value="36155000" />
+>>>>>>> 8df3f6b9e33ad1f84c59fd36a0d07d4a8453b29c
   </component>
   <component name="ToolWindowManager">
     <frame x="631" y="317" width="1914" height="1186" extended-state="1" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.15705128" />
+>>>>>>> aa610f27c7991a7c0e933ecc58cf11a3cc7119c7
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -375,7 +472,15 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5005342" side_tool="true" weight="0.32906765" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32906765" />
+<<<<<<< HEAD
       <window_info active="true" anchor="bottom" id="Python Console" order="12" sideWeight="0.49946582" visible="true" weight="0.3153565" />
+=======
+<<<<<<< HEAD
+      <window_info active="true" anchor="bottom" id="Python Console" order="12" sideWeight="0.49946582" visible="true" weight="0.40384614" />
+=======
+      <window_info active="true" anchor="bottom" id="Python Console" order="12" sideWeight="0.49946582" visible="true" weight="0.28153566" />
+>>>>>>> aa610f27c7991a7c0e933ecc58cf11a3cc7119c7
+>>>>>>> 8df3f6b9e33ad1f84c59fd36a0d07d4a8453b29c
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -387,6 +492,49 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+<<<<<<< HEAD
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+=======
+>>>>>>> aa610f27c7991a7c0e933ecc58cf11a3cc7119c7
   <component name="VcsManagerConfiguration">
     <MESSAGE value="rev1.0&#10;1. 完成算法的编写&#10;2. 未优化" />
     <option name="LAST_COMMIT_MESSAGE" value="rev1.0&#10;1. 完成算法的编写&#10;2. 未优化" />
@@ -516,6 +664,10 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/netlaprls/testnetlp.py" />
+    <entry file="file://$USER_HOME$/.pyenv/versions/env-2.7.9/lib/python2.7/site-packages/sklearn/metrics/ranking.py">
+=======
     <entry file="file://$PROJECT_DIR$/output/netlaprls_auc_cvs1_e.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -530,14 +682,39 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/netlaprls/AccuracyScore.png" />
+=======
+    <entry file="file://$PROJECT_DIR$/netlaprls/testplot.py">
+>>>>>>> aa610f27c7991a7c0e933ecc58cf11a3cc7119c7
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="42" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+          <folding>
+            <element signature="e#74#92#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/output/netlaprls_aupr_cvs1_gpcr.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netlaprls/cv_eval.py">
+=======
+    <entry file="file://$PROJECT_DIR$/netlaprls/AccuracyScore.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+>>>>>>> 8df3f6b9e33ad1f84c59fd36a0d07d4a8453b29c
     <entry file="file://$USER_HOME$/.pyenv/versions/env-2.7.9/lib/python2.7/site-packages/matplotlib/pyplot.py">
+>>>>>>> aa610f27c7991a7c0e933ecc58cf11a3cc7119c7
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
           <caret line="235" column="4" selection-start-line="235" selection-start-column="4" selection-end-line="235" selection-end-column="4" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/output/AccuracyScore.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -545,6 +722,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="64" column="18" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="18" />
+=======
+    <entry file="file://$PROJECT_DIR$/netlaprls/trainmodel.py">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="810">
+          <caret line="54" column="48" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datasets/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+=======
+        <state relative-caret-position="216">
+          <caret line="30" column="20" lean-forward="true" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+>>>>>>> 8df3f6b9e33ad1f84c59fd36a0d07d4a8453b29c
           <folding>
             <element signature="e#90#108#0" expanded="true" />
           </folding>
@@ -563,31 +757,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/netlaprls/functions.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state>
           <caret line="65" column="42" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
           <folding>
             <element signature="e#71#89#0" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="-6">
+          <caret line="1952" column="42" lean-forward="true" selection-start-line="1952" selection-start-column="42" selection-end-line="1952" selection-end-column="42" />
+>>>>>>> aa610f27c7991a7c0e933ecc58cf11a3cc7119c7
+>>>>>>> 8df3f6b9e33ad1f84c59fd36a0d07d4a8453b29c
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/netlaprls/trainmodel.py">
+    <entry file="file://$PROJECT_DIR$/netlaprls/predictmodel.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state>
           <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="615">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+=======
+        <state relative-caret-position="425">
+          <caret line="25" column="55" lean-forward="true" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
+>>>>>>> aa610f27c7991a7c0e933ecc58cf11a3cc7119c7
+>>>>>>> 8df3f6b9e33ad1f84c59fd36a0d07d4a8453b29c
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/netlaprls/test.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state>
           <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+=======
+<<<<<<< HEAD
+        <state relative-caret-position="1545">
+          <caret line="105" column="45" selection-start-line="105" selection-start-column="45" selection-end-line="105" selection-end-column="45" />
+=======
+        <state relative-caret-position="147">
+          <caret line="65" column="42" lean-forward="true" selection-start-line="65" selection-start-column="42" selection-end-line="65" selection-end-column="42" />
+>>>>>>> aa610f27c7991a7c0e933ecc58cf11a3cc7119c7
+>>>>>>> 8df3f6b9e33ad1f84c59fd36a0d07d4a8453b29c
           <folding>
             <element signature="e#71#104#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$USER_HOME$/.pyenv/versions/env-2.7.9/lib/python2.7/site-packages/matplotlib/figure.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -599,6 +820,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/netlaprls/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netlaprls/netlaprls1_0rev.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="75" column="32" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="32" />
+          <folding>
+            <element signature="e#90#108#0" expanded="true" />
+          </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/netlaprls/predictmodel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="604">
+          <caret line="52" column="1" lean-forward="true" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+>>>>>>> aa610f27c7991a7c0e933ecc58cf11a3cc7119c7
+>>>>>>> 8df3f6b9e33ad1f84c59fd36a0d07d4a8453b29c
         </state>
       </provider>
     </entry>
