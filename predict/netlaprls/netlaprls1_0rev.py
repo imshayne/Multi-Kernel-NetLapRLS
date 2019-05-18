@@ -24,7 +24,7 @@ Default parameters in this implementation:
 
 
 class NetLapRLS:
-    def __init__(self, gamma_d=10.0, gamma_t=10.0, beta_d=1e-5, beta_t=1e-4):
+    def __init__(self, gamma_d=10.0, gamma_t=10.0, beta_d=1e-5, beta_t=1e-5):
         self.gamma_d = float(gamma_d)
         self.gamma_t = float(gamma_t)
         self.beta_d = float(beta_d)
@@ -61,25 +61,38 @@ class NetLapRLS:
         Ft = np.dot(np.dot(Wt, X), R.T)
         self.predictR = 0.5*(Fd+Ft.T)
 
-    # 归一化 预测矩阵
-    def normalize_md(self, F):
-        max = np.max(F)
-        min = np.min(F)
-        print 'max min'
-        print max, min
-        return ((f - min)/(max - min) for f in F)
-
     def predict_scores(self, test_data, N):
         inx = np.array(test_data)
         # TODO 输出预测值之前正则化
         return self.predictR[inx[:, 0], inx[:, 1]]
 
+    # test_data 预测样本的下标 test_label 原样本下标对应的值
+    '''
+      precision_recall_curve  Returns
+    -------
+    precision : array, shape = [n_thresholds + 1]
+        Precision values such that element i is the precision of
+        predictions with score >= thresholds[i] and the last element is 1.
+
+    recall : array, shape = [n_thresholds + 1]
+        Decreasing recall values such that element i is the recall of
+        predictions with score >= thresholds[i] and the last element is 0.
+
+    thresholds : array, shape = [n_thresholds <= len(np.unique(probas_pred))]
+        Increasing thresholds on the decision function used to compute
+        precision and recall.
+
+    '''
     def evaluation(self, test_data, test_label):
         scores = self.predictR[test_data[:, 0], test_data[:, 1]]
         # test_label的值为原始intMat中对应下标的值 scores是将原始intMat中对应test_data的下标置为0后经过fix后 对应下标位置的得分
         prec, rec, thr = precision_recall_curve(test_label, scores)
+        # print 'precision & recall thresholds is '
+        # print thr
         aupr_val = auc(rec, prec)
         fpr, tpr, thr = roc_curve(test_label, scores)
+        # print 'fpr & tpr thresholds is '
+        # print thr
         auc_val = auc(fpr, tpr)
         return aupr_val, auc_val
 

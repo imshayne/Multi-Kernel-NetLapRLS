@@ -54,6 +54,7 @@ class TrainModel:
         # 通过aupr_vec 得出平均aupr 和
         aupr_avg, aupr_conf = mean_confidence_interval(aupr_vec)
         auc_avg, auc_conf = mean_confidence_interval(auc_vec)
+
         print "auc:%.6f, aupr: %.6f, auc_conf:%.6f, aupr_conf:%.6f, Time:%.6f \n" \
               % (auc_avg, aupr_avg, auc_conf, aupr_conf, time.clock() - tic)
         try:
@@ -72,25 +73,3 @@ class TrainModel:
     def cv_eval(self):
         args = None
         netlaprls_cv_eval('netlaprls', self.dataset, self.cv_data, self.intMat, self.drugMat, self.targetMat, self.cvs, args)
-
-    # 返回 0 | 1 的下标
-    def index_0(self):
-        x0, y0 = np.where(self.intMat == 0.0)
-        return x0, y0
-
-    # 返回下标对应于预测模型中的值  intMat 为 预测矩阵（正则化）
-    def index_scores(self, intMat, x0, y0):
-        intx = np.array(zip(x0, y0))
-        return intMat[intx[:, 0], intx[:, 1]]
-
-    # 预测完成后将原先标记的值置为较小值
-    def reset_index_1(self):
-        x1, y1 = np.where(self.intMat == 1.0)
-        pR = self.model.predictR
-        for x, y in zip(x1, y1):
-            pR[x, y] = 4e-09
-        return pR
-
-    # 返回drug_name targt_name
-    def dt_name(self):
-        return self.drug_names, self.target_names

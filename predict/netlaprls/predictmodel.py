@@ -11,8 +11,11 @@ from trainmodel import TrainModel
 from sklearn.preprocessing import MinMaxScaler
 
 
+# 设置保存的路径
 data_dir = os.path.abspath('..')
 print data_dir
+output_dir = os.path.join(os.path.abspath('../output'), 'new_dti')
+print 'output_dir is ' + output_dir
 
 '''
     1. 将intMat中0的下标 1的下标 记录下来
@@ -21,63 +24,66 @@ print data_dir
     4. 归一化
     5. 取出得分并排序
     
+    prime parameters:
+        'e'
+        'gpcr'
+        'ic'
+        'nr' 
 '''
 
-#
-# def normalize(mat):
-#     min = np.array(scores).min()
-#     max = np.array(scores).max()
-#     return [(m - min) / (max - min) for m in np.array(mat)]
+
+# 将intMat中1位置相对于predictR位置上的预测值 设置为较小值
+# 确保不影响 预测值
+def set_1_litte(intMat, pR, value=1e-5):
+    x1, y1 = np.where(intMat == 1)
+    pR_ = pR
+    for x, y in zip(x1, y1):
+        pR_[x, y] = value
+    return pR_
 
 
-trainmodel = TrainModel(dataset='e', seeds=[22, ], cvs=0)
-trainmodel.train_md()
-# index 0
-drug_names, target_names = trainmodel.dt_name()
+# 归一化矩阵 显示0-1
+def norm(mat):
+    norm = MinMaxScaler()
+    return norm.fit_transform(mat)
+
+
+# 返回指定预测值
+def re_scores(mat, x, y):
+    inx = np.array(zip(x,y))
+    return mat[inx[:, 0], inx[:, 1]]
+
+
+# 选择数据集
+'''
+    datasets = {'e', 'gpcr', 'nr', 'ic'}
+'''
+dataset = 'gpcr'
+
+intMat, drugMat, targetMat = load_data_from_file(dataset, os.path.join(data_dir, 'datasets'))
+drug_names, target_names = get_drugs_targets_names(dataset, os.path.join(data_dir, 'datasets'))
+# 使用默认参数fix
+model = NetLapRLS(gamma_d=10.0, gamma_t=10.0, beta_d=1e-5, beta_t=1e-5)
+
+# 预测得分
+model.fix_model(intMat, intMat, drugMat, targetMat, seed=[22, ])
 # x0, y0 为0的下标
-x0, y0 = trainmodel.index_0()
-
-# zip(x, y) 未标记的index 返回未标记位置预测的值
-# scores = trainmodel.index_scores(x0, y0)
-
-# 处理已知的过后
-predict_mat = trainmodel.reset_index_1()
-norm = MinMaxScaler()
-predict_mat_norm = norm.fit_transform(predict_mat)
-predict_mat_norm_flatten = np.array(predict_mat_norm).flatten()
-
-scores = trainmodel.index_scores(predict_mat_norm_flatten, x0, y0)
-# argsort函数 默认返回数索引值从小到大
-# ii 表示将预测到的scores列表 进行降序
-
+x0, y0 = np.where(intMat == 0.0)
+print x0, y0
+# 处理已标记作用的值
+pr = set_1_litte(intMat, model.predictR)
+# 归一化
+pr_norm = norm(pr)
+#
+scores = re_scores(pr_norm, x0, y0)
+# 从大到小排序 返回下标
 ii = np.argsort(scores)[::-1]
-<<<<<<< HEAD
-# 预测返回的样本个数
-predict_num = 1000
-=======
-print len(ii)
-# 取出所有未标记的index
->>>>>>> 8df3f6b9e33ad1f84c59fd36a0d07d4a8453b29c
+# 预测数量
+predictNum = 10000
+# 配对预测药物-标靶对
+predict_pairs = [(drug_names[x0[i]], target_names[y0[i]], scores[i]) for i in ii[:predictNum]]
 
-# 预测返回的样本个数
-predict_num = 1000
-output_dir = os.path.join(os.path.abspath('../'), 'output')
-print 'output_dir is ' + output_dir
-# TODO 预测标靶对
-# 预测标靶对
-<<<<<<< HEAD
-predict_pairs = [(drug_names[x[i]], target_names[y[i]], scores[i]) for i in ii[:predict_num]]
-for i in predict_pairs:
-    print i
-=======
-predict_pairs = [(drug_names[x0[i]], target_names[y0[i]], scores[i]) for i in ii[:predict_num]]
-# np.set_printoptions(suppress=True)
-
-for pair in predict_pairs:
-    print pair
-
->>>>>>> 8df3f6b9e33ad1f84c59fd36a0d07d4a8453b29c
-# new_dti_file = os.path.join(output_dir, "_".join(['netlaprls', dataset, "new_dti.txt"]))
-# novel_prediction_analysis(predict_pairs, new_dti_file, os.path.join(data_dir, 'biodb'))
-
-
+method = 'NetLapRLS'
+# 保存新作用对的路径
+new_dti_file = os.path.join(output_dir, "_".join([method, dataset, "new_dti.txt"]))
+novel_prediction_analysis(predict_pairs, new_dti_file, os.path.join(data_dir, 'biodb'))

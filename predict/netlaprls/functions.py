@@ -81,7 +81,6 @@ def cross_validation(intMat, seeds, cv=1, num=10):
             if cv == 0:
                 test_data = np.array([[k, j] for k in ii for j in xrange(num_targets)], dtype=np.int32)
             elif cv == 1:
-                #
                 test_data = np.array([[k/num_targets, k % num_targets] for k in ii], dtype=np.int32)
             # 生成随机test_data对应intMat下的下标
             x, y = test_data[:, 0], test_data[:, 1]
@@ -92,7 +91,7 @@ def cross_validation(intMat, seeds, cv=1, num=10):
             W[x, y] = 0
             # 将生成的训练矩阵 结合上述标记为0的下标 和 test_label(没置为0前对应的值)
             cv_data[seed].append((W, test_data, test_label))
-    return cv_data  # 每次内循环生成10个训练集
+    return cv_data  # 每次seed内循环生成10个训练集
 
 
 # 训练模型

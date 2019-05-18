@@ -30,11 +30,11 @@ import matplotlib.pyplot as plt
 #     acc = trainmodel.train_accuracy_md()
 #     accs.append(acc)
 #
-trainmodel = TrainModel(dataset='e', seeds=[22, ], cvs=0)
+trainmodel = TrainModel(dataset='e', seeds=[7771, 8367, 22, 1812, 4659], cvs=1)
 trainmodel.train_md()
 
 # 调参 beta_t bata_d
-# trainmodel.cv_eval()
+trainmodel.cv_eval()
 
 
 from matplotlib import rc
