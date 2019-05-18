@@ -10,7 +10,6 @@ import numpy as np
 from sklearn.metrics import precision_recall_curve, roc_curve, accuracy_score, precision_score
 from sklearn.metrics import auc
 
-
 '''
 Default parameters in [1]:
     gamma_d1 = gamma_p1 = 1
@@ -25,7 +24,7 @@ Default parameters in this implementation:
 
 
 class NetLapRLS:
-    def __init__(self, gamma_d=10, gamma_t=10, beta_d=1e-5, beta_t=1e-5):
+    def __init__(self, gamma_d=10.0, gamma_t=10.0, beta_d=1e-5, beta_t=1e-4):
         self.gamma_d = float(gamma_d)
         self.gamma_t = float(gamma_t)
         self.beta_d = float(beta_d)
@@ -62,8 +61,17 @@ class NetLapRLS:
         Ft = np.dot(np.dot(Wt, X), R.T)
         self.predictR = 0.5*(Fd+Ft.T)
 
+    # 归一化 预测矩阵
+    def normalize_md(self, F):
+        max = np.max(F)
+        min = np.min(F)
+        print 'max min'
+        print max, min
+        return ((f - min)/(max - min) for f in F)
+
     def predict_scores(self, test_data, N):
         inx = np.array(test_data)
+        # TODO 输出预测值之前正则化
         return self.predictR[inx[:, 0], inx[:, 1]]
 
     def evaluation(self, test_data, test_label):

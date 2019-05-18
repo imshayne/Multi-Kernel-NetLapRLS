@@ -21,15 +21,17 @@ import matplotlib.pyplot as plt
 
 ############################################################################
 # 模型运行 未进行调参 默认值训练
-datasets = ['e', 'gpcr', 'nr', 'ic']
-accs = []
-for dataset in datasets:
-    trainmodel = TrainModel(dataset, seeds=[7771, 8367, 22, 1812, 4659])
-    trainmodel.train_md()
-    # 模型Accuracy概率 50 folds
-    acc = trainmodel.train_accuracy_md()
-    accs.append(acc)
-
+# datasets = ['e', 'gpcr', 'nr', 'ic']
+# accs = []
+# for dataset in datasets:
+#     trainmodel = TrainModel(dataset, seeds=[7771, 8367, 22, 1812, 4659])
+#     trainmodel.train_md()
+#     # 模型Accuracy概率 50 folds
+#     acc = trainmodel.train_accuracy_md()
+#     accs.append(acc)
+#
+trainmodel = TrainModel(dataset='e', seeds=[22, ], cvs=0)
+trainmodel.train_md()
 
 # 调参 beta_t bata_d
 # trainmodel.cv_eval()
