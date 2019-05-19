@@ -57,21 +57,47 @@ def re_scores(mat, x, y):
 # 选择数据集
 '''
     datasets = {'e', 'gpcr', 'nr', 'ic'}
+    
+    'e':
+    Best beta_d=0.000001, beta_t=0.000001.
+    prime aupr 0.785952
+
+    
+'gpcr':
+    Best beta_d=0.000010, beta_t=0.000010.
+    prime aupr 0.617384
+
+'nr':
+    Best beta_d=0.100000, beta_t=0.010000.
+    prime aupr 0.462829
+
+'ic':
+    Best beta_d=0.000001, beta_t=0.000001.
+    prime aupr 0.820125
+
 '''
 dataset = 'gpcr'
 
 intMat, drugMat, targetMat = load_data_from_file(dataset, os.path.join(data_dir, 'datasets'))
 drug_names, target_names = get_drugs_targets_names(dataset, os.path.join(data_dir, 'datasets'))
 # 使用默认参数fix
-model = NetLapRLS(gamma_d=10.0, gamma_t=10.0, beta_d=1e-5, beta_t=1e-5)
+model = NetLapRLS(beta_d=0.000010, beta_t=0.000010)
 
 # 预测得分
-model.fix_model(intMat, intMat, drugMat, targetMat, seed=[22, ])
+model.fix_model(intMat, intMat, drugMat, targetMat, seed=[7771, 8367, 22, 1812, 4659])
 # x0, y0 为0的下标
 x0, y0 = np.where(intMat == 0.0)
 print x0, y0
 # 处理已标记作用的值
-pr = set_1_litte(intMat, model.predictR)
+'''
+    value:
+        'e':    0.000001
+        'gpcr': 0.000010
+        'nr':   0.100000
+        'ic':   0.000001
+
+'''
+pr = set_1_litte(intMat, model.predictR, value=0.000010)
 # 归一化
 pr_norm = norm(pr)
 #

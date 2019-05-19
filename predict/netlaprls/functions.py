@@ -102,7 +102,7 @@ def train(model, cv_data, intMat, drugMat, targetMat):
         for W, test_data, test_label in cv_data[seed]:
             # 将10折测试集 分别进行模型评估
             model.fix_model(W, intMat, drugMat, targetMat, seed)   # 得到 intMat-->Ytree 的 predictR矩阵
-            aupr_val, auc_val = model.evaluation(test_data, test_label)  #
+            aupr_val, auc_val = model.evaluation(test_data, test_label)
             aupr.append(aupr_val)
             auc.append(auc_val)
     return np.array(aupr, dtype=np.float64), np.array(auc, dtype=np.float64)
