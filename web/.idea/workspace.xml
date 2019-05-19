@@ -2,64 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8d358b8-678f-4859-9dc3-80c1613de6a3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../predict/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/.idea/other.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/.idea/predict.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/NRLMF/E.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/NRLMF/GPCR.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/NRLMF/IC.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/NRLMF/NR.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/datasets/e_admat_dgc.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/datasets/e_simmat_dc1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/datasets/e_simmat_dc2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/datasets/e_simmat_dc3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/datasets/e_simmat_dc4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/datasets/e_simmat_dg1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/datasets/e_simmat_dg2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/datasets/e_simmat_dg3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/datasets/e_simmat_dg4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/datasets/gpcr_admat_dgc.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/datasets/gpcr_simmat_dc1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/datasets/gpcr_simmat_dc2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/datasets/gpcr_simmat_dc3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/datasets/gpcr_simmat_dc4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/datasets/gpcr_simmat_dg1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/datasets/gpcr_simmat_dg2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/datasets/gpcr_simmat_dg3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/datasets/gpcr_simmat_dg4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/datasets/ic_admat_dgc.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/datasets/ic_simmat_dc1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/datasets/ic_simmat_dc2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/datasets/ic_simmat_dc3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/datasets/ic_simmat_dc4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/datasets/ic_simmat_dg1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/datasets/ic_simmat_dg2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/datasets/ic_simmat_dg3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/datasets/ic_simmat_dg4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/datasets/nr_admat_dgc.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/datasets/nr_simmat_dc1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/datasets/nr_simmat_dc2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/datasets/nr_simmat_dc3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/datasets/nr_simmat_dc4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/datasets/nr_simmat_dg1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/datasets/nr_simmat_dg2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/datasets/nr_simmat_dg3.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/datasets/nr_simmat_dg4.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/netlaprls/cv_eval.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/netlaprls/functions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/netlaprls/netlaprls1_0rev.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/netlaprls/new_pairs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/netlaprls/predictmodel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/netlaprls/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/netlaprls/testnetlp.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../predict/netlaprls/trainmodel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/web.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netlaprls/1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netlaprls/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netlaprls/static/css/drugbank.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netlaprls/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netlaprls/static/css/template.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netlaprls/static/css/theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netlaprls/static/css/theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netlaprls/static/css/theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netlaprls/static/image/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netlaprls/static/image/icons8-define_location_filled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netlaprls/static/image/icons8-pills.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netlaprls/static/image/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netlaprls/static/js/scripts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../predict/netlaprls/new_pairs.py" beforeDir="false" afterPath="$PROJECT_DIR$/../predict/netlaprls/new_pairs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,22 +27,81 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="82" column="31" lean-forward="true" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="31" />
+            <state relative-caret-position="572">
+              <caret line="144" lean-forward="true" selection-start-line="144" selection-end-line="144" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/__init__.py">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="28" lean-forward="true" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+            <state relative-caret-position="646">
+              <caret line="34" column="34" lean-forward="true" selection-start-line="34" selection-start-column="34" selection-end-line="35" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/netlaprls/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/netlaprls/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/netlaprls/tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/netlaprls/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/netlaprls/apps.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/netlaprls/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -90,15 +109,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="418">
+              <caret line="23" column="35" lean-forward="true" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manage.py">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -108,20 +122,35 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/settings.py" />
         <option value="$PROJECT_DIR$/web/__init__.py" />
+        <option value="$PROJECT_DIR$/netlaprls/1.py" />
+        <option value="$PROJECT_DIR$/web/urls.py" />
+        <option value="$PROJECT_DIR$/web/settings.py" />
+        <option value="$PROJECT_DIR$/netlaprls/views.py" />
+        <option value="$PROJECT_DIR$/netlaprls/tests.py" />
+        <option value="$PROJECT_DIR$/netlaprls/models.py" />
+        <option value="$PROJECT_DIR$/netlaprls/apps.py" />
+        <option value="$PROJECT_DIR$/netlaprls/admin.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="611" />
-    <option name="y" value="175" />
+    <option name="x" value="329" />
+    <option name="y" value="97" />
     <option name="width" value="1914" />
     <option name="height" value="1186" />
   </component>
@@ -140,6 +169,27 @@
               <item name="web" type="b2602c69:ProjectViewProjectNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="netlaprls" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="netlaprls" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -151,9 +201,23 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/js" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/netlaprls" />
+      <recent name="$PROJECT_DIR$/web" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/js" />
+      <recent name="$PROJECT_DIR$/static/css" />
+      <recent name="$PROJECT_DIR$/static/image" />
+      <recent name="$PROJECT_DIR$/templates" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -167,7 +231,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Django server.web">
+    <configuration name="settings" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="web" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/web" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web/settings.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="web" type="Python.DjangoServer" factoryName="Django server">
       <module name="web" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -192,6 +278,11 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.settings" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -204,25 +295,21 @@
       <option name="presentableId" value="Default" />
       <updated>1557995170598</updated>
       <workItem from="1557995175751" duration="799000" />
+      <workItem from="1558237306313" duration="2668000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="799000" />
+    <option name="totallyTimeSpent" value="3467000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="611" y="175" width="1914" height="1186" extended-state="0" />
+    <frame x="329" y="97" width="1914" height="1186" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25267094" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info active="true" anchor="bottom" id="Version Control" visible="true" weight="0.3299817" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="manage.py@web" visible="true" weight="0.3299817" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3299817" />
@@ -230,41 +317,119 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3299817" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/web$settings.coverage" NAME="settings Coverage Results" MODIFIED="1558260140237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/urls.py">
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="19">
+          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/netlaprls/static/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="56" column="45" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
+          <folding>
+            <element signature="e#33#37#0" expanded="true" />
+            <element signature="e#37#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netlaprls/1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="2" selection-end-column="29" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/wsgi.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/settings.py">
+    <entry file="file://$PROJECT_DIR$/netlaprls/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="82" column="31" lean-forward="true" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="31" />
+        <state relative-caret-position="38">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/__init__.py">
+    <entry file="file://$PROJECT_DIR$/netlaprls/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netlaprls/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="28" lean-forward="true" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+        <state relative-caret-position="38">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netlaprls/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netlaprls/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/netlaprls/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="23" column="35" lean-forward="true" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="144" lean-forward="true" selection-start-line="144" selection-end-line="144" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="34" column="34" lean-forward="true" selection-start-line="34" selection-start-column="34" selection-end-line="35" selection-end-column="30" />
         </state>
       </provider>
     </entry>

@@ -1,3 +1,7 @@
+# _*_ coding: utf-8 _*_
+__author__ = 'mcy'
+__date__ = '2019-05-19 18:12'
+
 """web URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:

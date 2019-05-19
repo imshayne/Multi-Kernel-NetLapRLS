@@ -1,0 +1,141 @@
+.home-section {
+    padding: 5%
+}
+
+.home-search {
+    background: #548078;
+    height: 18rem
+}
+
+.home-search .search-title {
+    padding-bottom: .5rem
+}
+
+.home-search .home-search-form {
+    min-width: 70%
+}
+
+.home-search .home-search-form .search-group {
+    position: relative
+}
+
+.home-search .home-search-form input.search-query {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border: none;
+    background-color: transparent;
+    border-bottom: 3px solid #FDFBF7;
+    transition: border-color .15s ease-in-out;
+    font-size: 2.5rem;
+    width: 100%;
+    color: #282C2F;
+    opacity: 0.8;
+    text-transform: uppercase;
+}
+
+.home-search .home-search-form input.search-query:focus {
+    outline: none;
+    border-bottom: 6px solid #FDFBF7;
+    transition: border-color .15s ease-in-out
+}
+
+.home-search .home-search-form .icon-search-big {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+
+/* .home-search .home-search-form .icon-search-big svg {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: .5rem 0;
+    fill: #aab3c1
+} */
+
+.home-search .home-search-form *::-webkit-input-placeholder {
+    color: #aab3c1;
+}
+
+.home-search .home-search-form *:-moz-placeholder {
+    color: #aab3c1;
+    opacity: 1
+}
+
+.home-search .home-search-form *::-moz-placeholder {
+    color: #aab3c1;
+    opacity: 1
+}
+
+.home-search .home-search-form *:-ms-input-placeholder {
+    color: #aab3c1
+}
+
+.home-search .home-search-form *::-ms-input-placeholder {
+    color: #aab3c1
+}
+
+.home-search .home-search-form .custom-radio {
+    padding-left: 0;
+    margin-right: .5rem;
+    cursor: pointer;
+}
+
+.home-search .home-search-form .custom-radio .custom-control-indicator {
+    width: auto;
+    height: auto;
+    top: 0;
+    position: relative;
+    border-radius: 999px;
+    border: 1px solid #aab3c1;
+    background-color: transparent
+}
+
+.home-search .home-search-form .custom-radio .custom-control-indicator .searcher-icon {
+    background-color: #fff
+}
+
+.home-search .home-search-form .custom-radio .custom-control-indicator .searcher-icon svg {
+    height: 1.5rem;
+    width: 1.5rem;
+    fill: #282c34;
+    transition: fill .15s ease-in-out
+}
+
+.home-search .home-search-form .custom-radio .custom-control-indicator :focus {
+    box-shadow: none
+}
+
+.home-search .home-search-form .custom-radio .custom-control-input:checked~.custom-control-indicator {
+    background-image: none;
+    background-color: #FDFBF7;
+    border-color: #FDFBF7;
+    position: relative;
+    border-radius: 999px;
+}
+
+.home-search .home-search-form .custom-radio .custom-control-input:checked~.custom-control-indicator .searcher-icon svg {
+    fill: #FDFBF7;
+    transition: fill .15s ease-in-out;
+    border-radius: 50%
+}
+
+.home-search .home-search-form .custom-radio .custom-control-input:focus~.custom-control-indicator {
+    box-shadow: none
+}
+
+.home-search .home-search-form .custom-radio .custom-control-input:hover~.custom-control-indicator {
+    box-shadow: 0 0 0 3px #548078
+}
+
+.home-search .home-search-form .custom-radio .custom-control-indicator:focus {
+    box-shadow: none
+}
+
+.home-search .home-search-form .custom-radio .custom-control-description {
+    color: #34383C;
+}

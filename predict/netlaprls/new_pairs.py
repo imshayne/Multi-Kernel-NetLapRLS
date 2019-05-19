@@ -145,7 +145,8 @@ def novel_prediction_analysis(predict_pairs, output_file, database_folder, posit
     drugbank = load_drug_target_pairs(os.path.join(database_folder, "drugbank.txt"))
     cheml = load_drug_target_pairs(os.path.join(database_folder, "chembl.txt"))
     matador = load_metador_interaction_data(os.path.join(database_folder, "matador.tsv"))
-    verify_pairs = verify_drug_target_interactions(predict_pairs, kegg, drugbank, cheml, matador, drugMap, targetMap, output_file)
+    verify_pairs = verify_drug_target_interactions(
+        predict_pairs, kegg, drugbank, cheml, matador, drugMap, targetMap, output_file)
     inx = np.array(positions)
     vec = np.zeros(inx.size)
     num_pairs = len(verify_pairs)

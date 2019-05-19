@@ -1,3 +1,7 @@
+# _*_ coding: utf-8 _*_
+__author__ = 'mcy'
+__date__ = '2019-05-19 18:12'
+
 """
 Django settings for web project.
 
@@ -78,9 +82,9 @@ WSGI_APPLICATION = 'web.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'testdjango',
+        'NAME': 'netlaprls_predict',
         'USER': 'root',
-        'PASSWORD': 'ys7216ys',
+        'PASSWORD': '',
         'HOST': '127.0.0.1',
         'PORT': '3306',
     }
@@ -123,4 +127,18 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
+'''
+1，接收到例如http://www.dataliu.com/static/image/picture.jpg的url，如果STATIC_URL = /static/, 
+    则其交由django.contrib.staticfiles App处理。
+
+2.django.contrib.staticfiles先去STATICFILES_DIRS中指定的目录下寻找image/picture.jpg，
+    如果找不到就去各app目录下的static/下寻找，将先找到的文件发布出去。
+
+'''
 STATIC_URL = '/static/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+STATICFILES_DIR = {
+    os.path.join(BASE_DIR, 'static'),
+}
