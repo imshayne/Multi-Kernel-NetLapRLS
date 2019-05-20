@@ -1,14 +1,15 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html>
-{% load staticfiles %}
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>laprlsweb</title>
     <meta name="description" content="nlp" />
     <meta name="generator" content="Themestr.app">
-    <link rel="icon" href="./favicon.png" type="image/x-icon" />
-    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+    <link rel="icon" href="{% static 'img/favicon.png' %}" type="image/x-icon" />
+    <link rel="shortcut icon" href="{% static 'img/favicon.png' %}" type="image/x-icon" />
     <meta property="og:image" name="twitter:image" content="http://bootstrap.themes.guide/assets/ss_hootstrap.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@ThemesGuide">
@@ -17,9 +18,9 @@
     <meta name="twitter:description" content="Download Hootstrap - free, open source Bootstrap 4 theme by Themes.guide">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/3.0.0/css/ionicons.css" rel="stylesheet">
-    <link href="./theme.css" rel="stylesheet">
-    <link href="./template.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link href="{% static 'css/theme.css' %}" rel="stylesheet">
+    <link href="{% static 'css/template.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
 
 
@@ -36,13 +37,13 @@
                     </div> -->
 
                     <div class="d-flex flex-column m-0 vh-100 home-section home-search justify-content-center align-items-center text-light">
-                        <form class="home-search-form" action="/unearth/q" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓">
+                        <form class="home-search-form" action="/search/" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="✓">
                             <div class="search-title small-header">
                                 <h4>What are you looking for?</h4>
                             </div>
                             <div class="form-group search-group"><input type="text" name="query" id="query" class="search-query" placeholder="d34002" autofocus="autofocus">
                                 <div class="drugbank-icon icon-search-big">
-                                    <a href="#toh" class="btn btn-light" role="button" style=" background-image: url('./search.png'); border-radius: 50%; background-repeat: no-repeat; width: 48px; height: 48px;"></a>
+                                    <a href="#" id ='toh' class="btn btn-light" style=" background-image: url('{% static 'img/search.png' %}'); border-radius: 50%; background-repeat: no-repeat; width: 48px; height: 48px;"></a>
                                 </div>
 
                             </div>
@@ -51,7 +52,7 @@
                                             id="searcher_drugs" value="drugs" class="custom-control-input searcher-category"
                                             checked="checked">
                                             <span class="custom-control-indicator btn btn-sm">
-                                            <div class="searcher-icon margin-right icon-circle drugbank-icon icon-drugs" style="background-image: url('./icons8-pills.png'); border-radius: 50%; background-repeat: no-repeat; background-position: center; width: 32px; height: 32px; float: left;">
+                                            <div class="searcher-icon margin-right icon-circle drugbank-icon icon-drugs" style="background-image: url('{% static 'img/icons8-pills.png' %}'); border-radius: 50%; background-repeat: no-repeat; background-position: center; width: 32px; height: 32px; float: left;">
                                             </div>
                                             <span class="custom-control-description" style="float: right; margin-left: 16px; margin-top:8px;"> <h6>Drugs</h6></span>
                                         </span>
@@ -59,8 +60,8 @@
                                 <label class="custom-radio"><input type="radio" name="searcher" id="searcher_bio_entities"
                                             value="bio_entities" class="custom-control-input searcher-category"><span
                                             class="custom-control-indicator btn btn-sm">
-                                            <div class="searcher-icon margin-right icon-circle drugbank-icon icon-targets" style="background-image: url('./icons8-define_location_filled.png'); border-radius: 50%; background-repeat: no-repeat; background-position: center; width: 32px; height: 32px; float: left;">
-                                                  
+                                            <div class="searcher-icon margin-right icon-circle drugbank-icon icon-targets" style="background-image: url('{% static 'img/icons8-define_location_filled.png' %}'); border-radius: 50%; background-repeat: no-repeat; background-position: center; width: 32px; height: 32px; float: left;">
+
                                             </div>
                                             <span class="custom-control-description" style="float: right; margin-left: 10px; margin-top: 8px;"><h6>Targets</h6></span>
                                         </span>
@@ -76,36 +77,52 @@
         <div class="container">
 
             <a class="navbar-brand mx-auto mb-3 mt-0" href="#" style="letter-spacing: 2px;">
-                <img src="./favicon.png" alt="favicon" style="margin:0; margin-top: -2px;"> 基于多核学习的药物-标靶关联预测</a>
+                <img src="{% static 'img/favicon.png' %}" alt="favicon" style="margin:0; margin-top: -2px;"> 基于多核学习的药物-标靶关联预测</a>
         </div>
     </nav>
     <main>
-        <section id="toh" class="container pb-5">
+        <section id="tod" class="container pb-5">
             <div class="row">
                 <div class="col-md-12">
                     <div class="table-responsive">
                         <table class="table table-hover table-sm">
                             <tbody>
                                 <tr>
-                                    <th class="w-25">Index</th>
-                                    <th class="w-50">Drug ID</th>
-                                    <th class="w-25">Score</th>
+                                    <th class="w-10">Index</th>
+                                    <th class="w-30">Drug ID</th>
+                                    <th class="w-20">Score</th>
+                                    <th class="w-10">Kegg</th>
+                                    <th class="w-10">Drugbank</th>
+                                    <th class="w-10">Chembl</th>
+                                    <th class="w-10">Matador</th>
 
                                 </tr>
                                 <tr>
                                     <td>1</td>
                                     <td>D345632 <span class="badge badge-primary">Prime</span></td>
                                     <td>0.9967654</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
                                 </tr>
                                 <tr>
-                                    <td>Galway</td>
+                                    <td>2</td>
                                     <td>08.05.18 <span class="badge badge-pill badge-primary">badge-pill</span></td>
                                     <td>5362</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
                                 </tr>
                                 <tr class="table-primary">
-                                    <td>Bern</td>
+                                    <td>3</td>
                                     <td>08.05.18</td>
                                     <td>153</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
                                 </tr>
 
                             </tbody>
@@ -136,13 +153,13 @@
             <div class="row">
                 <div class="col-6 col-md-6 col-lg-3 mb-2">
                     <h6 class="text-uppercase">Tools</h6>
-                    <ul class="nav flex-column">
+                    <!-- <ul class="nav flex-column">
                         <li><a class="text-white" target="ext" rel="nofollow" href="https://themestr.app" title="Bootstrap theme builder">Themestr.app</a></li>
                         <li><a class="text-white" target="ext" rel="nofollow" href="http://themes.guide" title="Bootstrap free and pro themes">Themes.guide</a></li>
                         <li><a class="text-white" target="ext" rel="nofollow" href="http://codeply.com" title="Prototype and edit code for Bootstrap and other responsive frameworks">Codeply</a>
                         </li>
                         <li><a class="text-white" target="ext" rel="nofollow" href="http://bootply.com">Bootply</a></li>
-                    </ul>
+                    </ul> -->
                 </div>
                 <div class="col-6 col-md-6 col-lg-3 mb-2">
                     <h6 class="text-uppercase">More</h6>
@@ -167,27 +184,26 @@
     <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/popper.js/1.13.0/umd/popper.min.js"></script>
     <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="scripts.js"></script>
+    <script src="{% static 'js/scripts.js' %}"></script>
 
     <!-- script method -->
     <script type="text/javascript">
-        ;
-        $(function() {
-            var labels = $("#clabel").find("input");
-            for (var x = 0; x < labels.length; x++) {
-                $(labels[x]).val()
-            }
-            alert(labels);
+
+        // 跳转到表格
+        ;$(document).ready(function() {
+            $("#toh").click(function () {
+                            $("html, body").animate({
+                                scrollTop: $("#tod").offset().top
+                            }, { duration: 500, easing: "swing" });
+                            console.log('dfdffdsfsdf');
+
+                            return false;
+                        });
+
 
         });
-        // $("#searcher_drugs").focus(function() {
-        //     $(this).attr("placeholder", "");
-        // });
-        // $("#searcher_drugs").blur(function(){
-        //     if($(this).val == "") {
-        //         $(this).attr('placeholder', "dddd")
-        //     }
-        // });
+
+
     </script>
 
 </body>

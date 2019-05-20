@@ -1,0 +1,7 @@
+@charset "UTF-8";
+h1 {
+    color: #6f42c1;
+    font-size: 50px;
+    display: block;
+    margin: 10px auto;
+}

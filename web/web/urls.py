@@ -1,6 +1,4 @@
 # _*_ coding: utf-8 _*_
-__author__ = 'mcy'
-__date__ = '2019-05-19 18:12'
 
 """web URL Configuration
 
@@ -19,7 +17,9 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from netlaprls.views import test
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^$', test),
 ]

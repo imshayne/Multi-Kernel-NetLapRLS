@@ -1,6 +1,4 @@
 # _*_ coding: utf-8 _*_
-__author__ = 'mcy'
-__date__ = '2019-05-19 18:12'
 
 """
 Django settings for web project.
@@ -41,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'netlaprls',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -128,7 +127,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 '''
-1，接收到例如http://www.dataliu.com/static/image/picture.jpg的url，如果STATIC_URL = /static/, 
+1，接收到例如http://www.dataliu.com/static/img/picture.jpg的url，如果STATIC_URL = /static/, 
     则其交由django.contrib.staticfiles App处理。
 
 2.django.contrib.staticfiles先去STATICFILES_DIRS中指定的目录下寻找image/picture.jpg，
@@ -137,8 +136,9 @@ USE_TZ = True
 '''
 STATIC_URL = '/static/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
-STATICFILES_DIR = {
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+# 用于普通文件 js css img
+STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
-}
+
+]

@@ -1,7 +1,11 @@
 # _*_coding:utf-8_*_
 __author__ = 'mcy'
 __date__ = '2019-05-15 10:09'
-from cv_eval import *
+import numpy as np
+import time
+from functions import *
+from netlaprls1_0rev import *
+
 '''
     :param dataset = 'e' 'gpcr' 'ic' 'nr'
     :param cv = 0 | 1    cvs = 1,2,3
@@ -83,6 +87,7 @@ class TrainModel:
     # TODO beta_d beta_t 生成矩阵 可视化图
     # TODO 平均的auc 和 aupr值
     # TODO 模型预测 将出现的作用对 标记
+    # 超参调整
     def netlaprls_cv_eval(self, method, dataset, cv_data, X, D, T, cvs, para):
         max_aupr = 0
         aupr_avg_all = []
