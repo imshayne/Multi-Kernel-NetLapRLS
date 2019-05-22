@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="netlaprls_predict@localhost" uuid="85b67d43-d9e6-4081-ab00-75ae8f28d705">
-      <database-info product="MySQL" version="5.7.25" jdbc-version="4.2" driver-name="MySQL Connector/J" driver-version="mysql-connector-java-8.0.15 (Revision: 79a4336f140499bd22dd07f02b708e163844e3d5)" dbms="MYSQL" exact-version="5.7.25" exact-driver-version="8.0">
+    <data-source name="netlaprls_predict@localhost" uuid="8e721a43-919b-4fd3-84a1-d1e9d3318a2d">
+      <database-info product="MySQL" version="5.7.25" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.47 ( Revision: fe1903b1ecb4a96a917f7ed3190d80c049b1de29 )" dbms="MYSQL" exact-version="5.7.25" exact-driver-version="5.1">
         <extra-name-characters>#@</extra-name-characters>
         <identifier-quote-string>`</identifier-quote-string>
       </database-info>

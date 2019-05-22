@@ -29,21 +29,21 @@ datasets = ['e', 'gpcr', 'ic', 'nr']
 
 
 def main():
-    from netlaprls.models import Enzyme, GPCR, Ion_Channel, Nuclear_Receptor
+    from netlaprls.models import New_pairs
     for dataset in datasets:
         f = open(os.path.join(BASE_DIR, 'NetLapRLS_' + dataset + '_new_dti.txt'))
         for line in f:
             drug_id, target_id, score, chembl ,drugbank, kegg, matador = line.split('\t\t')[1:]
             if 'e' == dataset:
-                Enzyme.objects.create(drug_id=drug_id, target_id=target_id, score=score, kegg=kegg, drugbank=drugbank, chembl=chembl, matador=matador)
+                New_pairs.objects.create(drug_id=drug_id, target_id=target_id, score=score, kegg=kegg, drugbank=drugbank, chembl=chembl, matador=matador)
             elif 'gpcr' == dataset:
-                GPCR.objects.create(drug_id=drug_id, target_id=target_id, score=score, kegg=kegg,
+                New_pairs.objects.create(drug_id=drug_id, target_id=target_id, score=score, kegg=kegg,
                                                 drugbank=drugbank, chembl=chembl, matador=matador)
             elif 'ic' == dataset:
-                Ion_Channel.objects.create(drug_id=drug_id, target_id=target_id, score=score, kegg=kegg,
+                New_pairs.objects.create(drug_id=drug_id, target_id=target_id, score=score, kegg=kegg,
                                             drugbank=drugbank, chembl=chembl, matador=matador)
             elif 'nr' == dataset:
-                Nuclear_Receptor.objects.create(drug_id=drug_id, target_id=target_id, score=score, kegg=kegg,
+                New_pairs.objects.create(drug_id=drug_id, target_id=target_id, score=score, kegg=kegg,
                                             drugbank=drugbank, chembl=chembl, matador=matador)
         f.close()
 
