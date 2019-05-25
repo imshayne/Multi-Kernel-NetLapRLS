@@ -15,6 +15,8 @@ def netlaprls(request):
 
 from .models import New_pairs
 import json
+
+
 def search_pairs(request):
     if request.method == "GET":
         id = str(request.GET.get('id')).upper()
@@ -34,5 +36,4 @@ def search_pairs(request):
         data = {}
         data['data'] = json.loads(serializers.serialize("json", new_pairs))
     print data
-
     return JsonResponse(data, content_type='application/json')

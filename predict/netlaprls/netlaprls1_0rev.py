@@ -83,7 +83,7 @@ class NetLapRLS:
         precision and recall.
 
     '''
-    def evaluation(self, test_data, test_label):
+    def evaluation(self, test_data, test_label):  # 这里的test_data 为下标
         scores = self.predictR[test_data[:, 0], test_data[:, 1]]
         # test_label的值为原始intMat中对应下标的值 scores是将原始intMat中对应test_data的下标置为0后经过fix后 对应下标位置的得分
         prec, rec, thr = precision_recall_curve(test_label, scores)
@@ -94,7 +94,7 @@ class NetLapRLS:
         # print 'fpr & tpr thresholds is '
         # print thr
         auc_val = auc(fpr, tpr)
-        return aupr_val, auc_val
+        return aupr_val, auc_val, scores, test_label  # scores = test_data
 
     def accuracy_md(self, test_data, test_label):
         scores = self.predictR[test_data[:, 0], test_data[:, 1]]

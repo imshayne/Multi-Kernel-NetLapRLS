@@ -73,7 +73,7 @@ def cross_validation(intMat, seeds, cv=1, num=10):
         step = index.size/num
         for i in xrange(num):
             if i < num-1:
-                # 抽取step步长的下标
+                # 抽取step步长的下标 测试数据的长度
                 ii = index[i*step:(i+1)*step]
             else:
                 # i = 9
@@ -97,15 +97,23 @@ def cross_validation(intMat, seeds, cv=1, num=10):
 # 训练模型
 def train(model, cv_data, intMat, drugMat, targetMat):
     aupr, auc = [], []
+    # 保存testdata testlabel
+    test_scores = []
+    test_labels = []
     # cv_data.keys()返回 cross_validation()中 列表seeds
     for seed in cv_data.keys():
         for W, test_data, test_label in cv_data[seed]:
             # 将10折测试集 分别进行模型评估
             model.fix_model(W, intMat, drugMat, targetMat, seed)   # 得到 intMat-->Ytree 的 predictR矩阵
-            aupr_val, auc_val = model.evaluation(test_data, test_label)
+            # scores test_label 保存 为了plot 出 aupr 和 pr 图
+            aupr_val, auc_val, score, test_label = model.evaluation(test_data, test_label)
             aupr.append(aupr_val)
             auc.append(auc_val)
-    return np.array(aupr, dtype=np.float64), np.array(auc, dtype=np.float64)
+            # print test_data
+            # print test_label
+            test_scores.append(score)
+            test_labels.append(test_label)
+    return np.array(aupr, dtype=np.float64), np.array(auc, dtype=np.float64), test_scores, test_labels
 
 
 def train_accuracy(model, cv_data, intMat, drugMat, targetMat):
@@ -135,7 +143,7 @@ def mean_confidence_interval(data, confidence=0.95):
 
 
 def write_metric_vector_to_file(auc_vec, file_name):
-    np.savetxt(file_name, auc_vec, fmt='%.8f')
+    np.savetxt(file_name, auc_vec, fmt='%s')
 
 
 # 多变量写入文件

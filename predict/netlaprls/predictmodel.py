@@ -76,12 +76,12 @@ def re_scores(mat, x, y):
     prime aupr 0.820125
 
 '''
-dataset = 'gpcr'
+dataset = 'e'
 
 intMat, drugMat, targetMat = load_data_from_file(dataset, os.path.join(data_dir, 'datasets'))
 drug_names, target_names = get_drugs_targets_names(dataset, os.path.join(data_dir, 'datasets'))
 # 使用默认参数fix
-model = NetLapRLS(beta_d=0.000010, beta_t=0.000010)
+model = NetLapRLS(beta_d=0.000001, beta_t=0.000001)
 
 # 预测得分
 model.fix_model(intMat, intMat, drugMat, targetMat, seed=[7771, 8367, 22, 1812, 4659])
