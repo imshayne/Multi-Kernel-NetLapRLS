@@ -55,7 +55,8 @@ class TrainModel:
         self.cv_data = cross_validation(self.intMat, self.seeds, self.cv)
         tic = time.clock()
 
-        aupr_vec, auc_vec, test_scores, test_labels = train(self.model, self.cv_data, self.intMat, self.drugMat, self.targetMat)
+        #
+        aupr_vec, auc_vec , test_scores, test_labels= train(self.model, self.cv_data, self.intMat, self.drugMat, self.targetMat)
         # 将10折交叉验证aupr auc取平均值 和 置信区间
         aupr_avg, aupr_conf = mean_confidence_interval(aupr_vec)
         auc_avg, auc_conf = mean_confidence_interval(auc_vec)
@@ -66,8 +67,8 @@ class TrainModel:
         self.save_auc_aupr(auc_vec, aupr_vec, filename='_default')
         # 保存下testdata testlable 十折的结果
         # self.save_testdata_testlabel(test_scores, test_labels)
-        return test_scores, test_labels
-        # return self.intMat, self.drugMat, self.targetMat
+        # return test_scores, test_labels
+        return self.intMat, self.drugMat, self.targetMat
 
     def save_auc_aupr(self, auc_vec, aupr_vec, filename=''):
         try:

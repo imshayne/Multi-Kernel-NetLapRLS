@@ -2,29 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8d358b8-678f-4859-9dc3-80c1613de6a3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../predict/netlaprls/optimize_hyperparameter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../predict/netlaprls/functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/../predict/netlaprls/functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../predict/netlaprls/netlaprls1_0rev.py" beforeDir="false" afterPath="$PROJECT_DIR$/../predict/netlaprls/netlaprls1_0rev.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../predict/netlaprls/predictmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/../predict/netlaprls/predictmodel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../predict/netlaprls/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../predict/netlaprls/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../predict/netlaprls/testplot.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../predict/netlaprls/trainmodel.py" beforeDir="false" afterPath="$PROJECT_DIR$/../predict/netlaprls/trainmodel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../predict/output/dt_name_e.npz" beforeDir="false" afterPath="$PROJECT_DIR$/../predict/output/dt_name_e.npz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../predict/output/dt_name_gpcr.npz" beforeDir="false" afterPath="$PROJECT_DIR$/../predict/output/dt_name_gpcr.npz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../predict/output/dt_name_ic.npz" beforeDir="false" afterPath="$PROJECT_DIR$/../predict/output/dt_name_ic.npz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../predict/output/dt_name_nr.npz" beforeDir="false" afterPath="$PROJECT_DIR$/../predict/output/dt_name_nr.npz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../predict/output/netlaprls_auc_cvs1_e.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../predict/output/netlaprls_auc_cvs1_e.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../predict/output/netlaprls_auc_cvs1_e_default.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../predict/output/netlaprls_auc_cvs1_e_default.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../predict/output/netlaprls_auc_cvs1_gpcr_default.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../predict/output/netlaprls_auc_cvs1_gpcr_default.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../predict/output/netlaprls_auc_cvs1_ic_default.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../predict/output/netlaprls_auc_cvs1_ic_default.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../predict/output/netlaprls_auc_cvs1_nr_default.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../predict/output/netlaprls_auc_cvs1_nr_default.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../predict/output/netlaprls_aupr_cvs1_e.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../predict/output/netlaprls_aupr_cvs1_e.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../predict/output/netlaprls_aupr_cvs1_e_default.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../predict/output/netlaprls_aupr_cvs1_e_default.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../predict/output/netlaprls_aupr_cvs1_gpcr_default.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../predict/output/netlaprls_aupr_cvs1_gpcr_default.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../predict/output/netlaprls_aupr_cvs1_ic_default.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../predict/output/netlaprls_aupr_cvs1_ic_default.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../predict/output/netlaprls_aupr_cvs1_nr_default.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../predict/output/netlaprls_aupr_cvs1_nr_default.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netlaprls/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/netlaprls/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../predict/output/e.png" beforeDir="false" afterPath="$PROJECT_DIR$/../predict/output/e.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../predict/output/gpcr.png" beforeDir="false" afterPath="$PROJECT_DIR$/../predict/output/gpcr.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -87,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3672">
-              <caret line="204" column="41" selection-start-line="204" selection-start-column="41" selection-end-line="204" selection-end-column="41" />
+            <state relative-caret-position="181">
+              <caret line="101" column="64" lean-forward="true" selection-start-line="101" selection-start-column="64" selection-end-line="101" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -117,7 +101,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/netlaprls/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="181">
@@ -190,6 +174,7 @@
       <find>None</find>
       <find>query</find>
       <find>dailyTable</find>
+      <find>D34002</find>
     </findStrings>
     <replaceStrings>
       <replace>10</replace>
@@ -218,17 +203,17 @@
         <option value="$PROJECT_DIR$/netlaprls/urls.py" />
         <option value="$PROJECT_DIR$/web/urls.py" />
         <option value="$PROJECT_DIR$/netlaprls/models.py" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/netlaprls/views.py" />
         <option value="$PROJECT_DIR$/utils/insert_data.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="106" />
-    <option name="y" value="55" />
+    <option name="x" value="3" />
+    <option name="y" value="23" />
     <option name="width" value="1366" />
-    <option name="height" value="768" />
+    <option name="height" value="679" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -238,7 +223,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -275,6 +259,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -420,22 +405,22 @@
       <workItem from="1558610612544" duration="4706000" />
       <workItem from="1558671328430" duration="3373000" />
       <workItem from="1558716737217" duration="8000" />
+      <workItem from="1558886615835" duration="3120000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46061000" />
+    <option name="totallyTimeSpent" value="49181000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="106" y="55" width="1366" height="768" extended-state="0" />
-    <editor active="true" />
+    <frame x="3" y="23" width="1366" height="679" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20468278" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20770393" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299817" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.25739646" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2572402" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39948893" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -611,13 +596,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3672">
-          <caret line="204" column="41" selection-start-line="204" selection-start-column="41" selection-end-line="204" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/netlaprls/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -673,6 +651,13 @@
           <folding>
             <element signature="e#24#59#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="101" column="64" lean-forward="true" selection-start-line="101" selection-start-column="64" selection-end-line="101" selection-end-column="64" />
         </state>
       </provider>
     </entry>

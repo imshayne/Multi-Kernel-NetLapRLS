@@ -112,8 +112,8 @@ def train(model, cv_data, intMat, drugMat, targetMat):
             # print test_data
             # print test_label
             test_scores.append(score)
-            test_labels.append(test_label)
-    return np.array(aupr, dtype=np.float64), np.array(auc, dtype=np.float64), test_scores, test_labels
+            test_labels.append(test_label)  #
+    return np.array(aupr, dtype=np.float64), np.array(auc, dtype=np.float64) , test_scores, test_labels
 
 
 def train_accuracy(model, cv_data, intMat, drugMat, targetMat):

@@ -1,4 +1,6 @@
 # _*_coding:utf-8_*_
+from netlaprls1_0rev import *
+
 __author__ = 'mcy'
 __date__ = '2019-04-29 10:29'
 
@@ -41,8 +43,8 @@ accs = []
 #
 
 # gpcr 4659 e 8367
-trainmodel = TrainModel(dataset='ic', seeds=[22, ], cvs=1)
-test_scores, test_labels = trainmodel.train_md()
+trainmodel = TrainModel(dataset='e', seeds=[22,], cvs=1)
+intMat, drugMat, targetMat = trainmodel.train_md()
 
 # 调参 beta_t bata_d
 # trainmodel.cv_eval()
@@ -144,7 +146,6 @@ def plot_beta(datasets):
 # print t_auc.shape
 # print t_aupr.shape
 # print test_scores.shape
-x = test_scores[0]
 
 
 def Plot_PR_ROC(test_label, test_score):
@@ -164,14 +165,14 @@ def Plot_PR_ROC(test_label, test_score):
             ax.plot(recall[i], precision[i], label="Fold %dth" % (i + 1))
     ax.set_xlabel("Recall Score")
     ax.set_ylabel("Precision Score")
-    ax.set_title("P-R")
-    legend = plt.legend(loc=3, title='10-Fold Cross Validation', shadow=True, fontsize='large')
+    ax.set_title("P-R (Ion Channel)")
+    legend = plt.legend(loc=3, title='10-Fold Cross Validation', shadow=True, fontsize='large', framealpha=1)
     legend.get_frame().set_facecolor('#f9f9f2')
     legend.get_title().set_fontsize(fontsize=20)
     ax.set_xlim(0, 1.1)
     ax.set_ylim(0, 1.1)
     ax.grid()
-    ax.text(0.9, 1.1, r'Ion Channel', fontdict={'size': 25, 'color': 'r'})
+    # ax.text(0.9, 1.1, r'Ion Channel', fontdict={'size': 25, 'color': 'r'})
 
 
     ax = fig.add_subplot(1, 2, 2)
@@ -194,7 +195,7 @@ def Plot_PR_ROC(test_label, test_score):
     ax.plot([0, 1], [0, 1], 'k--')
     ax.set_xlabel("FPR")
     ax.set_ylabel("TPR")
-    ax.set_title("ROC")
+    ax.set_title("ROC (Ion Channel)")
     legend = plt.legend(loc=4, title='10-Fold Cross Validation', shadow=True, fontsize='large')
     legend.get_frame().set_facecolor('#f9f9f2')
     legend.get_title().set_fontsize(fontsize=20)
@@ -206,13 +207,48 @@ def Plot_PR_ROC(test_label, test_score):
     # ax.text(10, 4, r'dddd', fontdict={'size': 100, 'color': 'r'})
     fig.tight_layout()
     plt.show()
-    fig.savefig("../output/ion_channel.png", dpi=300, bbox_inches='tight')
+    fig.savefig("../output/ic.png", dpi=300, bbox_inches='tight')
 
 
-Plot_PR_ROC(test_labels, test_scores)
+# Plot_PR_ROC(test_labels, test_scores)
 
 
+def plot_optimize(X, D, T, seeds):
+
+    beta_ts = np.logspace(-6, 3, 10)
+    beta_ds = np.logspace(-6, 3, 10)
+    scores_aupr = []
+    scores_auc = []
+    for beta_t in beta_ts:
+        for beta_d in beta_ds:
+            model = NetLapRLS(beta_d=beta_d,beta_t=beta_t)
+            # 10折交叉验证
+            cv_data = cross_validation(X, seeds)
+
+            aupr_vec, auc_vec, ts, tl = train(model, cv_data, X, D, T)
+            # 每次求出平均值 用于plot
+            aupr_avg, aupr_conf = mean_confidence_interval(aupr_vec)
+            auc_avg, auc_conf = mean_confidence_interval(auc_vec)
+            scores_aupr.append(aupr_avg)
+            scores_auc.append(auc_avg)
+
+    # plot
+    beta_ts, beta_ds = np.meshgrid(beta_ts, beta_ds)
+    scores_auprs = np.array(scores_aupr).reshape(beta_ts.shape)
+    scores_aucs = np.array(scores_auc).reshape(beta_ts.shape)
+
+    from mpl_toolkits.mplot3d import Axes3D
+    from matplotlib import cm
+    fig = plt.figure()
+    ax = Axes3D(fig)
+    surf = ax.plot_surface(beta_ts,beta_ds,scores_auprs, rstride=1,cstride=1, cmap=cm.jet,
+                           linewidth=0, antialiased=False)
+    fig.colorbar(surf, shrink=0.5, aspect=5)
+    ax.set_xlabel(r"$\beta_{t}$")
+    ax.set_ylabel(r"$\beta_{d}$")
+    ax.set_zlabel(r"$score$")
+    ax.set_title("Enzyme(AUPR)")
+    plt.show()
 
 
-
-
+plot_optimize(intMat, drugMat, targetMat, [7771, 8367, 22, 1812, 4659])
