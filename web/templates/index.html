@@ -39,11 +39,11 @@
                     <form class="home-search-form" action="" accept-charset="UTF-8" method="get">
                         {#                        <input name="utf8" type="hidden" value="✓">#}
                         <div class="search-title small-header">
-                            <h4>Input Drug ID or Target Id </h4>
+                            <h4>输入 Drug ID 或者 Target ID </h4>
                         </div>
                         <div class="form-group search-group"><input type="text" name="query" id="query"
                                                                     class="search-query" placeholder="d00348"
-                                                                    autofocus="autofocus">
+                                                                    autofocus="autofocus" autocomplete="off">
                             <div class="drugbank-icon icon-search-big">
                                 <a href="#" id='toh' class="btn btn-light"
                                    style=" background-image: url('{% static 'img/search.png' %}'); border-radius: 50%; background-repeat: no-repeat; width: 48px; height: 48px;"></a>
@@ -60,7 +60,7 @@
                                                  style="background-image: url('{% static 'img/icons8-pills.png' %}'); border-radius: 50%; background-repeat: no-repeat; background-position: center; width: 32px; height: 32px; float: left;">
                                             </div>
                                             <span class="custom-control-description"
-                                                  style="float: right; margin-left: 16px; margin-top:8px;"> <h6>Drugs</h6></span>
+                                                  style="float: right; margin-left: 16px; margin-top:8px;"><h6>Drugs</h6></span>
                                         </span>
                             </label>
                             <label class="custom-radio"><input type="radio" name="searcher" id="searcher_bio_entities"
@@ -113,7 +113,7 @@
             <div class="w-100 my-4"></div>
             <div class="col-md-8">
                 <a href="#top" class="text-primary" data-toggle="tooltip" data-placement="right"
-                   title="This tooltip is on the right.">Return</a>
+                   title="This tooltip is on the right.">返回搜索框</a>
                 <br>
                 {#                <a href="#top" class="text-primary" data-toggle="tooltip" data-placement="bottom"#}
                 {#                   title="This tooltip is on the bottom.">Bottom tooltip (hover)</a>#}
@@ -124,7 +124,7 @@
         <div class="px-4 p-2 rounded bg-primary text-light" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">
             Toggle my popover
         </div>-->
-                <button type="button" class="btn btn-lg btn-primary" data-toggle="popover" title="Popover title">Again
+                <button type="button" id="search-again" class="btn btn-lg btn-primary" data-toggle="popover" title="Popover title">重新选择 ID
                 </button>
             </div>
             <div class="w-100 my-4"></div>
@@ -135,20 +135,21 @@
 <footer id="footer" class="bg-dark text-light py-5">
     <div class="container py-5">
         <div class="row">
-            <div class="col-6 col-md-6 col-lg-3 mb-2">
-                <h6 class="text-uppercase">工具</h6>
-                <!-- <ul class="nav flex-column">
-                    <li><a class="text-white" target="ext" rel="nofollow" href="https://themestr.app" title="Bootstrap theme builder">Themestr.app</a></li>
-                    <li><a class="text-white" target="ext" rel="nofollow" href="http://themes.guide" title="Bootstrap free and pro themes">Themes.guide</a></li>
-                    <li><a class="text-white" target="ext" rel="nofollow" href="http://codeply.com" title="Prototype and edit code for Bootstrap and other responsive frameworks">Codeply</a>
-                    </li>
-                    <li><a class="text-white" target="ext" rel="nofollow" href="http://bootply.com">Bootply</a></li>
-                </ul> -->
-            </div>
-            <div class="col-6 col-md-6 col-lg-3 mb-2 text-center">
-                <h6 class="text-uppercase">学校</h6>
-                <ul class="nav flex-column">
+{#            <div class="col-6 col-md-6 col-lg-3 mb-2">#}
+{#                <h6 class="text-uppercase">工具</h6>#}
+{#                <!-- <ul class="nav flex-column">#}
+{#                    <li><a class="text-white" target="ext" rel="nofollow" href="https://themestr.app" title="Bootstrap theme builder">Themestr.app</a></li>#}
+{#                    <li><a class="text-white" target="ext" rel="nofollow" href="http://themes.guide" title="Bootstrap free and pro themes">Themes.guide</a></li>#}
+{#                    <li><a class="text-white" target="ext" rel="nofollow" href="http://codeply.com" title="Prototype and edit code for Bootstrap and other responsive frameworks">Codeply</a>#}
+{#                    </li>#}
+{#                    <li><a class="text-white" target="ext" rel="nofollow" href="http://bootply.com">Bootply</a></li>#}
+{#                </ul> -->#}
+{#            </div>#}
+            <div class="col-12 col-md-12 col-lg-6 mb-2 text-left">
+{#                <h6 class="text-uppercase">学校</h6>#}
 
+                <ul class="nav flex-column">
+                    <li><a class="text-white" target="ext" rel="nofollow" href="http://www.usts.edu.cn" title="Bootstrap theme builder">Copyright ©2019 苏州科技大学.All rights reserved.</a></li>
                 </ul>
             </div>
             <div class="col-12 col-md-12 col-lg-6 mb-2 text-right">
@@ -169,7 +170,7 @@
 <script src="https://cdn.bootcss.com/popper.js/1.13.0/umd/popper.min.js"></script>
 <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-<script src="/static/js/scripts.js"></script>
+{#<script src="/static/js/scripts.js"></script>#}
 
 <!-- script method -->
 <script type="text/javascript">
@@ -183,6 +184,22 @@
         });
     });        // 跳转表格
 
+    //placeholder default
+    ;$(document).ready(function () {
+        $(".custom-radio").bind("click", function () {
+            isChecked = $('input[type="radio"][name="searcher"]:checked').val();
+            if (isChecked == '0') {
+                $("#query").val("");
+                $("#query").attr('placeholder', "D00348");
+                $("#query").focus();
+            }else {
+                $("#query").val("");
+                $("#query").attr('placeholder', "hsa1571");
+                $("#query").focus();
+            }
+        });
+
+    });
 
     ;$(document).ready(function () {
         var table = null;
@@ -321,9 +338,13 @@
         });
         {#隐藏列#}
 
-
     }, false);
 
+    // 再次搜索
+    ;$("#search-again").bind("click", function () {
+        $("#query").val("");
+        $('html,body').animate({ scrollTop: 0 }, 500);
+    })
 
 </script>
 
